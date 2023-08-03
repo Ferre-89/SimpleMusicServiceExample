@@ -20,7 +20,7 @@ public class ServicioMusica extends Service {
     }
 
     @Override
-    public int onStartCommand(Intent intentc, int flagos, int idArranque) {
+    public int onStartCommand(Intent intent, int flags, int idArranque) {
         Toast.makeText(this, "Servicio arrancado " + idArranque, Toast.LENGTH_SHORT).show();
 
         reproductor.start();
