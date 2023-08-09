@@ -21,4 +21,11 @@
         android:layout_height="wrap_content"
         android:text="Detener Servicio"/>
 
+    <Button
+        android:id="@+id/boton_socorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S.O.S"/>
+
+
 </LinearLayout>
