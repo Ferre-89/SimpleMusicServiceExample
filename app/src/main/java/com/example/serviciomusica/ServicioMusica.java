@@ -41,8 +41,12 @@ public class ServicioMusica extends Service {
 
         NotificationCompat.Builder notificacion = new NotificationCompat.Builder(this, CANAL_ID)
                 .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(Utilidades.SERVICIO.bitMapADrawable(this, R.drawable.ic_launcher_background))
                 .setContentTitle("Título")
-                .setContentText("Notificación Wear OS");
+                .setContentText("Notificación Wear OS")
+                .setWhen(System.currentTimeMillis() + 1000 * 60 * 60)
+                .setContentInfo("Mas info")
+                .setTicker("Texto en barra de estado");
 
         notificationManager.notify(NOTIFICACION_ID, notificacion.build());
 
